@@ -107,4 +107,17 @@ public class LinkedList<T>
         setNext(data);
         next().setNext(n);
     }
+
+    public int count()
+    {
+        int count = 1;
+        LinkedList<T> r = this;
+
+        while (r.hasNext())
+        {
+            ++count;
+            r = r.next();
+        }
+        return count;
+    }
 }
