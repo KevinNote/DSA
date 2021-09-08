@@ -27,4 +27,12 @@ public class Queue<T>
     {
         _list = null;
     }
+
+    public int count()
+    {
+        if (_list == null)
+            return 0;
+
+        return _list.count();
+    }
 }
