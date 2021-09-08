@@ -28,6 +28,9 @@ Consider the extremely low ability I have, I cannot use Unit Test in Java. Maybe
         - LinearSearch
             - ```LinearSearch.java```
             - ```LinearSearchTest.java```
+        - BinarySearch
+            - ```BinarySearch.java```
+            - ```BinarySearchTest.java```
 
 ## License
 
