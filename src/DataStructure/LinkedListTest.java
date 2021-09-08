@@ -10,14 +10,16 @@ public class LinkedListTest
         ll.append("999");
         ll.append("777");
         ll.append("666");
-        printLinkedList(ll);   // [666, 777, 999, 777, 666]
+        printLinkedList(ll);                        // [666, 777, 999, 777, 666]
+        System.out.println("Count: " + ll.count()); // Count: 5
 
 
         ll.next().insert("888");
-        printLinkedList(ll);   // [666, 777, 888, 999, 777, 666]
+        printLinkedList(ll);                        // [666, 777, 888, 999, 777, 666]
+        System.out.println("Count: " + ll.count()); // Count: 6
 
         ll.remove();
-        printLinkedList(ll);   // [777, 888, 999, 777, 666]
+        printLinkedList(ll);                        // [777, 888, 999, 777, 666]
 
         ll.remove("777");
         printLinkedList(ll);   // [888, 999, 666]
