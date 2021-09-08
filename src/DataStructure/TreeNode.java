@@ -73,7 +73,7 @@ public class TreeNode<T>
 
     public boolean isLeaf()
     {
-        return _children.size() == 0;
+        return _children == null || _children.size() == 0;
     }
     //endregion
 
@@ -92,4 +92,15 @@ public class TreeNode<T>
     }
     //endregion
 
+    public int getLevel()
+    {
+        if (isRoot())
+        {
+            return 0;
+        }
+        else
+        {
+            return parent().getLevel() + 1;
+        }
+    }
 }
