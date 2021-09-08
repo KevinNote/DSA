@@ -14,11 +14,11 @@ public class BinarySearch
             int cmp = sortedArray[mid].compareTo(item);
 
             if (cmp == 0)        // sortedArray[mid] == item
-                return mid - 1;  // Don't forget -1
+                return mid;
             else if (cmp < 0)    // sortedArray[mid] < item
                 start = mid + 1; // Don't forget +1
             else                 // sortedArray[mid] > item
-                end = mid;
+                end = mid - 1;   // Don't forget -1
 
         }
         return -1;

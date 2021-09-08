@@ -11,7 +11,9 @@ public class BinarySearchTest
         System.out.println(index1);  // -1
 
         // Test for recurring
-        int index2 = BinarySearch.search(s, "str5", 0, s.length - 1);
-        System.out.println(index2);  // -1
+        int index2 = BinarySearch.search(s, "str1", 0, s.length - 1);
+        System.out.println(index2);  // 1
+        int index3 = BinarySearch.search(s, "str5", 0, s.length - 1);
+        System.out.println(index3);  // -1
     }
 }
