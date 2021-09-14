@@ -11,12 +11,12 @@ public class SelectionSort
         if (a.length <= 1)
             return a;
 
-        for (int i = 0; i < array.length - 1; ++i)
+        for (int i = 0; i < a.length - 1; ++i)
         {
             int min = i;
-            for (int j = i + 1; j < array.length; ++j)
+            for (int j = i + 1; j < a.length; ++j)
             {
-                Cmp.CmpType ct = Cmp.Compare(array[min].compareTo(array[j]));
+                Cmp.CmpType ct = Cmp.Compare(a[min].compareTo(a[j]));
                 if (ct == Cmp.CmpType.Greater)
                     min = j;
             }
