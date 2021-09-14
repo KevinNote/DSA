@@ -35,6 +35,8 @@ Consider the extremely low ability I have, I cannot use Unit Test in Java. Maybe
         - BubbleSort 11/09/2021
             - ```BubbleSort.java```
             - ```BubbleSortTest.java```
+        - SelectionSort 14/09/2021
+            - ```SelectionSort.java```
 
 ## License
 
