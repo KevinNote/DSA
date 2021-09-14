@@ -17,4 +17,9 @@ public class Cmp
             return CmpType.Greater;
         return CmpType.Equal;
     }
+
+    public static <T extends Comparable<T>> CmpType Compare(T objA, T objB)
+    {
+        return Compare(objA.compareTo(objB));
+    }
 }

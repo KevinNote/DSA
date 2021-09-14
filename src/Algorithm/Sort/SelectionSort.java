@@ -16,8 +16,7 @@ public class SelectionSort
             int min = i;
             for (int j = i + 1; j < a.length; ++j)
             {
-                Cmp.CmpType ct = Cmp.Compare(a[min].compareTo(a[j]));
-                if (ct == Cmp.CmpType.Greater)
+                if (Cmp.Compare(a[min], a[j]) == Cmp.CmpType.Greater)
                     min = j;
             }
 

@@ -17,8 +17,7 @@ public class BubbleSort
             isSorted = true;
             for (int i = 0; i < array.length - 1; ++i)
             {
-                Cmp.CmpType cmp = Cmp.Compare(a[i].compareTo(a[i + 1]));
-                if (cmp == Cmp.CmpType.Greater)
+                if (Cmp.Compare(a[i], a[i + 1]) == Cmp.CmpType.Greater)
                 {
                     isSorted = false;
                     //System.out.println(a[i] + "<=>" + a[i + 1]);
