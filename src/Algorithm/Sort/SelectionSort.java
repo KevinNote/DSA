@@ -14,15 +14,11 @@ public class SelectionSort
         for (int i = 0; i < array.length - 1; ++i)
         {
             int min = i;
-            for (int j = 1; j < array.length; ++j)
+            for (int j = i + 1; j < array.length; ++j)
             {
-                int cmp = a[min].compareTo(a[j]);
-                Cmp.CmpType ct = Cmp.Compare(cmp);
-
+                Cmp.CmpType ct = Cmp.Compare(array[min].compareTo(array[j]));
                 if (ct == Cmp.CmpType.Greater)
-                {
                     min = j;
-                }
             }
 
             T v = a[min];
