@@ -23,6 +23,8 @@ Consider the extremely low ability I have, I cannot use Unit Test in Java. Maybe
     - Queue 08/09/2021
         - ```Queue.java```
         - ```QueueTest.java```
+    - AvlTree 3/11/2021
+        - ```AvlTree.java```
 - A/Algorithms
     - Search
         - LinearSearch 08/09/2021
